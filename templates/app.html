@@ -1,0 +1,10 @@
+<title>WordCount! The ultimate counter</title>
+<a href = {% url 'home' %}>Back to Home</a>
+<br>
+<h1>WORDCOUNT APP</h1>
+
+<form action = "{% url 'count' %}">
+<textarea cols = "40" rows = "10" name = "fulltext"></textarea>
+<br>
+<input type = "submit" value = "Count the words"></input>
+</form>

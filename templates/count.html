@@ -1,0 +1,15 @@
+<title>Results</title>
+<h1>WORDCOUNT APP RESULTS</h1>
+<a href = {% url 'app' %}><h3>RESTART WORDCOUNT APP</h3></a>
+<h2>Your text:</h2>
+{{ fulltext }}
+<br>
+<h2>Result:</h2>
+<p>There are {{ count }} no of words in your input text</p>
+{% for word, counts in sortedwords %}
+"{{ word }}"
+is repeated
+{{ counts }}
+times!
+<br>
+{% endfor %}
